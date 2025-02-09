@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/c5a502e4-d73e-4949-8842-87c52f4b4f2f
 # [FARMFRESH] 🎯
 
 
@@ -10,21 +12,21 @@
 - Member 2: [Karthika Muraleedhar] - [Carmel Polytechnic College, Alappuzha]
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+[https://ieyuun.github.io/FARMFRESH/]
 
 ### Project Description
 [We are providing an E-Commerce Platform acting as an intermidiate between Local farmers and Direct Customers]
 
 ### The Problem statement
-[Some farmers in Rural areas, does not have the facility to market their products, and also it may affect their profit]
+[Some farmers in Rural areas, does not have the facility to market their products, and also it may affect their profit because Middlemen take a large share of profit]
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+[Acting as an intermidiate and collecting very low commision from them and ensuring famers to get paid fairly]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
+- [HTM,CSS,JavaScript]
 - [Frameworks used]
 - [Libraries used]
 - [Tools used]
@@ -83,7 +85,7 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+[https://github.com/user-attachments/assets/b1f9fda3-4755-4b41-a0db-eda21993c759]
 *Explain what the video demonstrates*
 
 # Additional Demos
