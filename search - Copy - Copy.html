@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | FARMFRESH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/farmfresh.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>FARMFRESH</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2><center>Search for Products</center></h2>
+        <input type="text" id="searchBox" placeholder="Search for groceries..." onkeyup="searchProducts()">
+    </section>
+
+    <!-- Product List -->
+    <section class="product-list">
+        <div class="product" data-name="Guava">
+            <img src="guava.jpg" alt="Guava">
+            <h3>Guava</h3>
+            <p>₹130/kg</p>
+        </div>
+        <div class="product" data-name="Pearl Spot">
+            <img src="pearl.jpg" alt="Pearl Spot">
+            <h3>Pearl Spot</h3>
+            <p>₹400/kg</p>
+        </div>
+        <div class="product" data-name="Carps">
+            <img src="carps.jpg" alt="Carps">
+            <h3>Carps</h3>
+            <p>₹450/kg</p>
+        </div>
+        <div class="product" data-name="Curd">
+            <img src="curd.jpg" alt="Curd">
+            <h3>Curd</h3>
+            <p>₹50/kg</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FARMFRESH. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function searchProducts() {
+            let input = document.getElementById("searchBox").value.toLowerCase();
+            let products = document.querySelectorAll(".product");
+
+            products.forEach(product => {
+                let name = product.getAttribute("data-name").toLowerCase();
+                if (name.includes(input)) {
+                    product.style.display = "block";
+                } else {
+                    product.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
