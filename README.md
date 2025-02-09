@@ -1,23 +1,22 @@
-# [Project Name] 🎯
+# [FARMFRESH] 🎯
 
 
-## Basic Details
-### Team Name: [Name]
+## An E-Commerce Platform for Local farmers
+### Team Name: [Pioneers]
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: [Pavithra Raju] - [Carmel Polytechnic College, Alappuzha]
+- Member 2: [Karthika Muraleedhar] - [Carmel Polytechnic College, Alappuzha]
 
 ### Hosted Project Link
 [mention your project hosted project link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[We are providing an E-Commerce Platform acting as an intermidiate between Local farmers and Direct Customers]
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+[Some farmers in Rural areas, does not have the facility to market their products, and also it may affect their profit]
 
 ### The Solution
 [How are you solving it? Keep it fun!]
