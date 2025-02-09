@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - FARMFRESH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>FARMFRESH</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-list">
+        <h2>SPICES</h2>
+        <div class="featured-products">
+            <div class="product">
+                <img src="/cardamom.jpg" alt="Cardamom">
+                <h3>Cardamom</h3>
+                <p>₹30 per 8g</p>
+                <button onclick="addToCart('Cardamom', 30)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Cardamom', 30)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/pepper.jpg" alt="Pepper">
+                <h3>Pepper</h3>
+                <p>₹30 per 25g</p>
+                <button onclick="addToCart('Pepper', 30)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Pepper', 30)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/cinnamon.jpg" alt="Cinnamon">
+                <h3>Cinnamon</h3>
+                <p>₹75 per 25g</p>
+                <button onclick="addToCart('Cinnamon', 75)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Cinnamon', 75)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="nutmeg.jpg" alt="Nutmeg">
+                <h3>Nutmeg</h3>
+                <p>₹90 per 25g</p>
+                <button onclick="addToCart('Nutmeg', 90)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Nutmeg', 90)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="turmeric.jpg" alt="Turmeric">
+                <h3>Turmeric</h3>
+                <p>₹30 per 25g</p>
+                <button onclick="addToCart('Turmeric', 30)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Turmeric', 30)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="cloves.jpg" alt="Cloves">
+                <h3>Cloves</h3>
+                <p>₹30 per 15g</p>
+                <button onclick="addToCart('Cloves', 30)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Cloves', 30)">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FARMFRESH. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function addToCart(product, price) {
+            alert(product + " added to cart!");
+            // Here you can add logic to update the cart storage
+        }
+
+        function buyNow(product, price) {
+            window.location.href = `checkout.html?product=${encodeURIComponent(product)}&price=${price}`;
+        }
+    </script>
+</body>
+</html>

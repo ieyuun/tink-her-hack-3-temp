@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - FARMFRESH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>FARMFRESH</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-list">
+        <h2>RICE</h2>
+        <div class="featured-products">
+            <div class="product">
+                <img src="/matta.jpg" alt="Matta Rice">
+                <h3>Matta Rice</h3>
+                <p>₹120/kg</p>
+                <button onclick="addToCart('Matta Rice', 120)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Matta Rice', 120)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/kothamalli.jpg" alt="Kothamalli Samba Rice">
+                <h3>Kothamalli Samba Rice</h3>
+                <p>₹90/kg</p>
+                <button onclick="addToCart('Kothamalli Samba Rice', 90)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Kothamalli Samba Rice', 90)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/kaima.jpg" alt="Kaima Rice">
+                <h3>Kaima Rice</h3>
+                <p>₹150/kg</p>
+                <button onclick="addToCart('Kaima Rice', 150)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Kaima Rice', 150)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/chama.jpg" alt="Chama Rice">
+                <h3>Chama Rice</h3>
+                <p>₹199/kg</p>
+                <button onclick="addToCart('Chama Rice', 199)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Chama Rice', 199)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/gk.jpg" alt="Gandhakasala Rice">
+                <h3>Gandhakasala Rice</h3>
+                <p>₹120/kg</p>
+                <button onclick="addToCart('Gandhakasala Rice', 120)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Gandhakasala Rice', 120)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/basmati.jpg" alt="Long Grain Basmati Rice">
+                <h3>Long Grain Basmati Rice</h3>
+                <p>₹130/kg</p>
+                <button onclick="addToCart('Long Grain Basmati Rice', 130)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Long Grain Basmati Rice', 130)">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FARMFRESH. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(product, price) {
+            alert(product + " added to cart!");
+            // Add logic to update cart storage
+        }
+
+        function buyNow(product, price) {
+            window.location.href = `checkout.html?product=${encodeURIComponent(product)}&price=${price}`;
+        }
+    </script>
+</body>
+</html>

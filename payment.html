@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - FARMFRESH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Payment</h1>
+    </header>
+
+    <section class="payment-container">
+        <h2>Complete Your Payment</h2>
+        <p id="payment-product"></p>
+        <p id="payment-amount"></p>
+
+        <form id="payment-form">
+            <label>Payment Method:</label>
+            <select id="payment-method">
+                <option value="credit-card">Credit Card</option>
+                <option value="upi">UPI</option>
+                <option value="net-banking">Net Banking</option>
+            </select>
+
+            <div id="payment-details">
+                <input type="text" placeholder="Enter Card/UPI ID" required>
+            </div>
+
+            <button type="button" onclick="confirmPayment()">Pay Now</button>
+        </form>
+    </section>
+
+    <script>
+        // Extract product details from URL
+        const params = new URLSearchParams(window.location.search);
+        const product = params.get("product");
+        const price = params.get("price");
+
+        document.getElementById("payment-product").innerText = "Product: " + product;
+        document.getElementById("payment-amount").innerText = "Total Amount: ₹" + price;
+
+        function confirmPayment() {
+            alert("Payment Successful! Thank you for shopping.");
+            window.location.href = "index.html";  // Redirect to homepage after payment
+        }
+    </script>
+
+</body>
+</html>

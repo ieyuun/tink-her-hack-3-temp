@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - FARMFRESH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>FARMFRESH</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-list">
+        <h2>MEAT</h2>
+        <div class="featured-products">
+            <div class="product">
+                <img src="/beef.jpg" alt="Beef">
+                <h3>Beef</h3>
+                <p>₹450/kg</p>
+                <button onclick="addToCart('Beef', 450)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Beef', 450)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/mutton.jpg" alt="Mutton">
+                <h3>Mutton</h3>
+                <p>₹550/kg</p>
+                <button onclick="addToCart('Mutton', 550)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Mutton', 550)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/chicken.jpg" alt="Chicken">
+                <h3>Chicken</h3>
+                <p>₹220/kg</p>
+                <button onclick="addToCart('Chicken', 220)">Add to Cart</button>
+                <button class="buy-now-btn" onclick="buyNow('Chicken', 220)">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FARMFRESH. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

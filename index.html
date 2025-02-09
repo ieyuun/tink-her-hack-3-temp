@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARMFRESH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="truck.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="truck.jpg" class="logo-img">
+                <h1>FARMFRESH</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+                <li><a href="register.html" class="register-btn">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Welcome to FARMFRESH</h2>
+        <p>Best Deals on Groceries, Dairy Products, and More!</p>
+    </section>
+
+    <section class="categories">
+        <h2><b>Shop by Categories</b></h2>
+        <div class="category"><a href="products.html?category=Spices">Spices</a></div>
+        <div class="category"><a href="products2.html?category=Dairy Products">Dairy Products</a></div>
+        <div class="category"><a href="products3.html?category=Fruits & Vegetables">Fruits & Vegetables</a></div>
+        <div class="category"><a href="products4.html?category=Rice">Rice</a></div>
+        <div class="category"><a href="products5.html?category=Fish & Meat">Meat</a></div>
+    </section>
+
+    <section class="featured-products">
+        <h2><b>Featured Products</b></h2>
+        
+        <div class="product">
+            <img src="guava.jpg" alt="Guava">
+            <h3>Guava</h3>
+            <p>₹130/kg</p>
+            <button onclick="addToCart('Guava', 130)">Add to Cart</button>
+            <button class="buy-now-btn" onclick="buyNow('Guava', 130)">Buy Now</button>
+        </div>
+        
+        <div class="product">
+            <img src="pearl.jpg" alt="Pearl Spot">
+            <h3>Pearl Spot</h3>
+            <p>₹400/kg</p>
+            <button onclick="addToCart('Pearl Spot', 400)">Add to Cart</button>
+            <button class="buy-now-btn" onclick="buyNow('Pearl Spot', 400)">Buy Now</button>
+        </div>
+        
+        <div class="product">
+            <img src="rice.jpg" alt="Rice">
+            <h3>Rice</h3>
+            <p>₹62/kg</p>
+            <button onclick="addToCart('Rice', 62)">Add to Cart</button>
+            <button class="buy-now-btn" onclick="buyNow('Rice', 62)">Buy Now</button>
+        </div>
+        
+        <div class="product">
+            <img src="curd.jpg" alt="Curd">
+            <h3>Curd</h3>
+            <p>₹65/litre</p>
+            <button onclick="addToCart('Curd', 65)">Add to Cart</button>
+            <button class="buy-now-btn" onclick="buyNow('Curd', 65)">Buy Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FARMFRESH. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function addToCart(product, price) {
+            alert(product + " added to cart!");
+        }
+
+        function buyNow(product, price) {
+            window.location.href = `checkout.html?product=${encodeURIComponent(product)}&price=${price}`;
+        }
+    </script>
+</body>
+</html>
